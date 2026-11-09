@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1>Task Manager</h1>
+
+      <div class="panel">
+        <div class="topbar">
+          <input id="taskInput" type="text" placeholder="Add a new task..." />
+          <button id="addBtn" type="button">Add Task</button>
+        </div>
+
+        <div class="stats">
+          <article class="stat-card">
+            Total Tasks: <span id="totalCount">0</span>
+          </article>
+
+          <article class="stat-card">
+            Backlog: <span id="backlogCount">0</span>
+          </article>
+
+          <article class="stat-card">
+            In Progress: <span id="progressCount">0</span>
+          </article>
+
+          <article class="stat-card">
+            Done: <span id="doneCount">0</span>
+          </article>
+        </div>
+
+        <div class="board" id="board"></div>
+      </div>
+    </div>
+
+    <script src="logic.js"></script>
+  </body>
+</html>
